@@ -72,7 +72,7 @@ const services = [
 
 function Service() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-20 px-4 relative overflow-hidden">
+    <div id="service" className="min-h-screen bg-gray-900 text-white py-20 px-4 relative overflow-hidden">
       {/* Animated Background Bubbles */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (

@@ -13,7 +13,7 @@ function Home() {
     ];
     const waitTime = 2000;
   return (
-    <div className='flex flex-wrap justify-around bg-[#ffffff]'>
+    <div id='home' className='flex flex-wrap justify-around bg-[#ffffff]'>
         <div>
             <div>
                 <div className="flex justify-center">

@@ -66,7 +66,7 @@ const icons = [
 
 function About() {
   return (
-    <div className='my-2'>
+    <div id='about' className='my-2'>
       <h1 className='text-center text-3xl font-bold'>About</h1>
       <div className='flex flex-col md:flex-row flex-wrap justify-around px-6'>
         <motion.div

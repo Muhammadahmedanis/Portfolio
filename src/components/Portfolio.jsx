@@ -48,7 +48,7 @@ function Portfolio() {
   };
 
   return (
-    <div className="mx-auto p-5 bg-gray-700">
+    <div id="portfolio" className="mx-auto p-5 bg-gray-700">
       <h1 className="text-4xl text-center font-bold mb-8 ">Portfolio</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* Left Side - Project Details */}

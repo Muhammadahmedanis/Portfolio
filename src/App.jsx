@@ -10,7 +10,7 @@ import About from './components/About'
 import Home from './components/Home'
 import Loader from './components/Loader'
 import Portfolio from './components/Portfolio'
-import Wave from './components/wave'
+import { FaHandPointUp } from "react-icons/fa";
 
 function App() {
   const[loader, setLoader] = useState(true);
@@ -28,12 +28,14 @@ function App() {
         <>
           <Navbar />
           <Home />
-          {/* <Wave /> */}
           <About />
           <Service />
           <Portfolio />
           <Contact />
           <Footer />
+          <a href="#home" className='fixed right-5 bottom-10 bg-white border-none rounded p-2'>
+            <FaHandPointUp size={30}/>
+          </a>
         </>
       )
     }

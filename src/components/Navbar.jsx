@@ -8,10 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const navItems = [
-    { name: "Home" },
-    { name: "About"},
-    { name: "Service"},
-    { name: "Contact" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about"},
+    { name: "Service", id: "service"},
+    { name: "Contact", id: "contact" },
   ];
 
   const handleCheckboxChange = () => {
@@ -37,14 +37,15 @@ const Navbar = () => {
         <div className="hidden sm:flex items-center">
           <ul className="flex font-semibold text-[15px]">
             {navItems.map((nav) => (
-              <li
+              <a
+              href={`#${nav.id}`}
                 key={nav.name}
                 className="px-4 py-2 relative group block text-gray-100 cursor-pointer rounded-lg dark:text-gray-200 md:mx-2"
               >
                 {nav.name}
                 <span className="absolute -bottom-1 left-1/2 w-0 h-[2px] bg-blue-800 transition-all duration-500 group-hover:w-full group-hover:left-0"></span>
                 <span className="absolute -bottom-1 right-1/2 w-0 h-[2px] bg-blue-800 transition-all duration-500 group-hover:w-full group-hover:right-0"></span>
-              </li>
+              </a>
             ))}
           </ul>
 
