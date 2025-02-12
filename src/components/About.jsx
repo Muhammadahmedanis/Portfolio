@@ -66,8 +66,18 @@ const icons = [
 
 function About() {
   return (
-    <div id='about' className='my-2'>
-      <h1 className='text-center text-3xl font-bold'>About</h1>
+    <div id='about' className=' bg-[#dcddf8] pt-20'>
+    <div className="text-center mb-10 relative">
+          <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
+            <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
+          </div>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+            About
+          </h2>
+          <p className="text-[#3f3082] max-w-2xl mx-auto text-lg">
+          Crazy full stack developer who wants to explore every tech stack
+          </p>
+        </div>
       <div className='flex flex-col md:flex-row flex-wrap justify-around px-6'>
         <motion.div
           initial={{ opacity: 0, x: -75 }}
@@ -81,22 +91,22 @@ function About() {
             initial={{ opacity: 0, x: 75 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5 }} Name="text-[19px]">
-            <h3 className="text-2xl lg:text-[30px] font-semibold text-center line-clamp-2 mb-4">
+            transition={{ duration: 1.5 }} className="text-[19px]">
+            <h3 className="text-2xl lg:text-[30px] text-[#3f3082] font-semibold text-center line-clamp-2 mb-4">
               Skills
             </h3>
-            <div>
-              <p className={` text-[16px] text-center mb-2 font-semibold`}>
+            {/* <div>
+              <p className={` text-[16px] text-center text-[#3f3082] mb-2 font-semibold`}>
                 Crazy full stack developer who wants to explore every tech stack
               </p>
-            </div>
+            </div> */}
             <div className="flex flex-wrap items-center justify-center gap-4  mt-10 socials-container">
               {icons.map((val, ind) => (
                 <span
                   style={{ "--accent-color": val.bg }}
                   data-social={val.name}
                   key={ind}
-                  className="relative text-gray-300 cursor-pointer font-bold"
+                  className="relative text-white cursor-pointer font-bold"
                 >
                   {val.icon}
                 </span>
@@ -105,25 +115,25 @@ function About() {
 
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-4">
+              <p className="mb-4 pt-4 text-[#3f3082]">
                 Scalable architectures that grow with your business.
               </p>
             </div>
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-1">
+              <p className="mb-4 pt-1 text-[#3f3082]">
                 Integrate APIs, auth, databases, and analytics seamlessly.
               </p>
             </div>
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-1">
+              <p className="mb-4 pt-1 text-[#3f3082]">
                 Optimized code for faster load times and smoother interactions
               </p>
             </div>
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-1">
+              <p className="mb-4 pt-1 text-[#3f3082]">
                 Develop interactive and responsive user interfaces that engaging front-end experiences.
               </p>
             </div>

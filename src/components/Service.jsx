@@ -72,7 +72,7 @@ const services = [
 
 function Service() {
   return (
-    <div id="service" className="min-h-screen bg-gray-900 text-white py-20 px-4 relative overflow-hidden">
+    <div id="service" className="min-h-screen bg-[#dcddf8] text-white py-20 px-4 relative overflow-hidden">
       {/* Animated Background Bubbles */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
@@ -93,18 +93,14 @@ function Service() {
       </div>
 
       <div className="max-w-7xl mx-auto relative">
-        {/* Heading Section with Enhanced Design */}
         <div className="text-center mb-20 relative">
           <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
             <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Services{" "}
-            <span className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
-              I believe in
-            </span>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+            Services
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-[#3f3082] max-w-2xl mx-auto text-lg">
             Delivering comprehensive web solutions with a focus on quality, performance, and user experience
           </p>
         </div>
@@ -112,12 +108,12 @@ function Service() {
         {/* Services Grid with Enhanced Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="group relative">
+            <div key={index} className="group relative border-none">
               {/* Card Background with Glassmorphism */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-xl" />
+              <div className="absolute inset-0 bg-[#b6b6ef] rounded-xl" />
 
               {/* Card Content */}
-              <div className="relative p-6 h-full backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:-translate-y-1">
+              <div className="relative p-6 h-full backdrop-blur-sm rounded-xl border-none hover:border-gray-600/50 transition-all duration-300 hover:transform hover:-translate-y-1">
                 <div className="mb-4 flex justify-between items-start">
                   {/* Main Icon with Gradient Background */}
                   <div
@@ -126,7 +122,7 @@ function Service() {
                     {service.icon}
                   </div>
                   {/* Decorative Icon */}
-                  <div className="text-gray-500 group-hover:text-gray-400 transition-all duration-300 group-hover:rotate-12">
+                  <div className="text-white group-hover:text-gray-400 transition-all duration-300 group-hover:rotate-12">
                     {service.decorativeIcon}
                   </div>
                 </div>
@@ -134,7 +130,7 @@ function Service() {
                 <h3 className="text-xl font-bold mb-3 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-all duration-300">
+                <p className="text-[#3f3082] text-sm leading-relaxed group-hover:text-gray-300 transition-all duration-300">
                   {service.description}
                 </p>
 
@@ -147,16 +143,14 @@ function Service() {
       </div>
 
       {/* Add the animation keyframes */}
-      <style jsx global>{`
-        @keyframes float {
+      <style>{`@keyframes float {
           0% { transform: translateY(0) rotate(0deg); }
           50% { transform: translateY(-100px) rotate(180deg); }
           100% { transform: translateY(0) rotate(360deg); }
         }
         .animate-float {
           animation: float linear infinite;
-        }
-      `}</style>
+        }`}</style>
     </div>
   )
 }

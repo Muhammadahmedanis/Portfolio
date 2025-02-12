@@ -2,7 +2,7 @@ import React from 'react'
 
 function Loader() {
   return (
-    <div className="start-container">
+    <div className="start-container bg-[#b3b3ee] min-h-screen">
     <div className="loader">
     </div>
     <h1 className="name-animation">

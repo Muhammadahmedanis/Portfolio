@@ -50,9 +50,6 @@
 
 
 
-
-
-
 /* LOADER START */
 
 .start-container {
@@ -185,7 +182,7 @@
   border-radius: 50%;
   width: 180px;
   height: 180px;
-  color: hashtag#05886e;
+  color: #7a61cb;
   }
   
   .loader:before,
@@ -201,9 +198,11 @@
   transform: rotateX(70deg);
   animation: 1s spin linear infinite;
   }
-  
+  .name-animation span{
+    color: #7a61cb;
+  }
   .loader:after {
-  color: hashtag#05886e;
+  color: #7a61cb;
   transform: rotateY(70deg);
   animation-delay: .4s;
   }
