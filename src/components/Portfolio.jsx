@@ -15,8 +15,8 @@ const projects = [
     id: 1,
     title: "Blog Spark",
     description:
-      "𝐀 𝐌𝐄𝐑𝐍 𝐒𝐭𝐚𝐜𝐤 𝐌𝐚𝐫𝐯𝐞𝐥 – 𝐃𝐞𝐬𝐢𝐠𝐧𝐞𝐝 𝐭𝐨 𝐂𝐚𝐩𝐭𝐢𝐯𝐚𝐭𝐞 𝐑𝐞𝐚𝐝𝐞𝐫𝐬 & 𝐄𝐦𝐩𝐨𝐰𝐞𝐫 𝐖𝐫𝐢𝐭𝐞𝐫𝐬!⁣⁣  A fully responsive, dynamic blogging hub where seamless user experience meets cutting-edge tech. Perfect for writers, readers, and admins, this platform redefines blogging with reaci time interaction, infinite scrolling, and robust content management",
-    tech: "React JS, Node JS, Express JS, Mongo DB",
+      "𝐀 𝐌𝐄𝐑𝐍 𝐒𝐭𝐚𝐜𝐤 𝐌𝐚𝐫𝐯𝐞𝐥 – 𝐃𝐞𝐬𝐢𝐠𝐧𝐞𝐝 𝐭𝐨 𝐂𝐚𝐩𝐭𝐢𝐯𝐚𝐭𝐞 𝐑𝐞𝐚𝐝𝐞𝐫𝐬 & 𝐄𝐦𝐩𝐨𝐰𝐞𝐫 𝐖𝐫𝐢𝐭𝐞𝐫𝐬!⁣⁣  A fully responsive, dynamic blogging hub where seamless user experience meets cutting-edge tech. Perfect for writers, readers, and admins, this platform redefines blogging with real-time interaction, infinite scrolling, robust content management, intuitive navigation, and lightning-fast performance.",
+    tech: "React JS, Node JS, Express JS, Mongo DB, Ten-Stack",
     liveLink: "https://blog-spark.vercel.app",
     linkedinLink: "https://www.linkedin.com/posts/muhammad-ahmed-88b843202_mernstack-fullstackdevelopment-reactjs-activity-7293717014102130688-bK8F?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO83SsBrXSz27QRSu3Q4wFej7dXsE72Azg",
     githubLink: "https://github.com/Muhammadahmedanis/BlogSpark",
@@ -93,24 +93,24 @@ function Portfolio() {
           <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
             <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             Portfolio
           </h2>
         </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* Left Side - Project Details */}
         <div className="portfolio-box bg-[#b6b6ef] p-6 rounded-lg order-last md:order-first">
-          <p className="num text-6xl text-[#3f3082] py-5 font-bold mb-6">
+          <p className="num text-4xl md:text-6xl text-[#3f3082] md:py-1.5 font-bold mb-6">
             {`0${projects[activeIndex].id}`}
           </p>
-          <h3 className="text-3xl text-white font-bold mb-3">
+          <h3 className="text-xl md:text-2xl text-white font-bold mb-3">
             {projects[activeIndex].title}
           </h3>
-          <p className="text-lg text-[#3f3082]">{projects[activeIndex].description}</p>
+          <p className="text-[16px] md:text-lg text-[#3f3082]">{projects[activeIndex].description}</p>
           <div className="tech my-4 border-b-2 border-white pb-3 text-white">
             <p>{projects[activeIndex].tech}</p>
           </div>
-          <div className="github flex gap-4">
+          <div className="github flex flex-wrap justify-center md:justify-start gap-4">
             <a
               href={projects[activeIndex].liveLink}
               target="_blank"
@@ -118,7 +118,7 @@ function Portfolio() {
               className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#261e57] hover:bg-gray-400 transition text-white"
             >
               <MdOutlineArrowOutward size={22} />
-              <span>Live Project</span>
+              <span className="text-sm md:font-semibold">Live Project</span>
             </a>
             <a
               href={projects[activeIndex].githubLink}
@@ -127,7 +127,7 @@ function Portfolio() {
               className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#261e57] hover:bg-gray-400 transition text-white"
             >
               <ImGithub size={22} />
-              <span>GitHub</span>
+              <span className="text-sm md:font-semibold">GitHub</span>
             </a>
             <a
               href={projects[activeIndex].linkedinLink}
@@ -136,7 +136,7 @@ function Portfolio() {
               className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#261e57] hover:bg-gray-400 transition text-white"
             >
               <FaLinkedinIn size={22} />
-              <span>Linkedin</span>
+              <span className="text-sm md:font-semibold">Linkedin</span>
             </a>
           </div>
         </div>
@@ -156,7 +156,7 @@ function Portfolio() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded-lg shadow-lg w-full h-auto md:h-96 lg:h-[420px] object-cover"
+                  className="rounded-lg shadow-lg w-full h-56 md:h-96 lg:h-[390px] object-cover"
                 />
               </div>
             ))}

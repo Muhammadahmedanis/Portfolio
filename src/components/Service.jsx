@@ -72,9 +72,9 @@ const services = [
 
 function Service() {
   return (
-    <div id="service" className="min-h-screen bg-[#dcddf8] text-white py-20 px-4 relative overflow-hidden">
+    <div id="service" className="bg-[#dcddf8] text-white py-10 px-4 relative overflow-hidden">
       {/* Animated Background Bubbles */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
@@ -84,23 +84,23 @@ function Service() {
               top: `${Math.random() * 100}%`,
               width: `${Math.random() * 300 + 50}px`,
               height: `${Math.random() * 300 + 50}px`,
-              background: `radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%)`,
-              animation: `float ${Math.random() * 10 + 20}s linear infinite`,
-              animationDelay: `${Math.random() * -20}s`,
+              // background: `radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%)`,
+              // animation: `float ${Math.random() * 10 + 20}s linear infinite`,
+              // animationDelay: `${Math.random() * -20}s`,
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto relative">
-        <div className="text-center mb-20 relative">
+        <div className="text-center mb-10 relative">
           <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
             <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-6xl font-bold mb-2 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             Services
           </h2>
-          <p className="text-[#3f3082] max-w-2xl mx-auto text-lg">
+          <p className="text-[#3f3082] max-w-2xl mx-auto text-[14px] font-semibold md:text-lg">
             Delivering comprehensive web solutions with a focus on quality, performance, and user experience
           </p>
         </div>

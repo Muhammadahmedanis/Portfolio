@@ -66,15 +66,15 @@ const icons = [
 
 function About() {
   return (
-    <div id='about' className=' bg-[#dcddf8] pt-20'>
+    <div id='about' className=' bg-[#dcddf8] pt-10'>
     <div className="text-center mb-10 relative">
           <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
             <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-6xl font-bold mb-3 md:mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             About
           </h2>
-          <p className="text-[#3f3082] max-w-2xl mx-auto text-lg">
+          <p className="text-[#3f3082] max-w-2xl mx-auto font-semibold text-[16px] md:text-lg">
           Crazy full stack developer who wants to explore every tech stack
           </p>
         </div>
@@ -100,14 +100,13 @@ function About() {
                 Crazy full stack developer who wants to explore every tech stack
               </p>
             </div> */}
-            <div className="flex flex-wrap items-center justify-center gap-4  mt-10 socials-container">
+            <div className="flex flex-wrap items-center justify-center gap-4 mt-10 socials-container">
               {icons.map((val, ind) => (
                 <span
                   style={{ "--accent-color": val.bg }}
                   data-social={val.name}
                   key={ind}
-                  className="relative text-white cursor-pointer font-bold"
-                >
+                  className="relative text-white cursor-pointer font-bold">
                   {val.icon}
                 </span>
               ))}
@@ -115,23 +114,23 @@ function About() {
 
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-4 text-[#3f3082]">
+              <p className="mb-4 pt-4 text-[16px] font-semibold md:text-lg text-[#3f3082]">
                 Scalable architectures that grow with your business.
               </p>
             </div>
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-1 text-[#3f3082]">
+              <p className="mb-4 pt-1 text-[#3f3082] text-[16px] font-semibold md:text-lg">
                 Integrate APIs, auth, databases, and analytics seamlessly.
               </p>
             </div>
             <div className="flex items-center gap-x-4">
               <FaTag className="text-yellow-500" />
-              <p className="mb-4 pt-1 text-[#3f3082]">
+              <p className="mb-4 pt-1 text-[#3f3082] text-[16px] font-semibold md:text-lg">
                 Optimized code for faster load times and smoother interactions
               </p>
             </div>
-            <div className="flex items-center gap-x-4">
+            <div className="flex items-center gap-x-4 text-[16px] font-semibold md:text-lg">
               <FaTag className="text-yellow-500" />
               <p className="mb-4 pt-1 text-[#3f3082]">
                 Develop interactive and responsive user interfaces that engaging front-end experiences.

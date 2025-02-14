@@ -35,10 +35,10 @@ Message: ${message}`
           <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
             <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             Let's Create Something Amazing Together
           </h2>
-          <p className="text-[#3f3082] max-w-2xl mx-auto text-lg">
+          <p className="text-[#3f3082] max-w-2xl mx-auto text-[14px] md:text-lg">
             Get in touch with us and let's bring your vision to life
           </p>
         </div>
