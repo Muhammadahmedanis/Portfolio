@@ -88,7 +88,7 @@ function Portfolio() {
   };
 
   return (
-    <div id="portfolio" className="mx-auto p-5 bg-[#dcddf8]">
+    <div id="portfolio" className="mx-auto p-5 bg-[#e7f4ff]">
      <div className="text-center mb-10">
           <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-50">
             <div className="w-96 h-96 bg-gradient-to-r from-fuchsia-500/30 to-cyan-500/30 rounded-full blur-3xl" />
@@ -99,15 +99,15 @@ function Portfolio() {
         </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* Left Side - Project Details */}
-        <div className="portfolio-box bg-[#b6b6ef] p-6 rounded-lg order-last md:order-first">
-          <p className="num text-4xl md:text-6xl text-[#3f3082] md:py-1.5 font-bold mb-6">
+        <div className="portfolio-box bg-[#d7d8fb] p-6 rounded-lg order-last md:order-first">
+          <p className="num text-4xl md:text-6xl text-white md:py-1.5 font-bold mb-6">
             {`0${projects[activeIndex].id}`}
           </p>
-          <h3 className="text-xl md:text-2xl text-white font-bold mb-3">
+          <h3 className="text-xl md:text-2xl text-[#7467eb] font-bold mb-3">
             {projects[activeIndex].title}
           </h3>
-          <p className="text-[16px] md:text-lg text-[#3f3082]">{projects[activeIndex].description}</p>
-          <div className="tech my-4 border-b-2 border-white pb-3 text-white">
+          <p className="text-[16px] md:text-lg text-[#9893f2]">{projects[activeIndex].description}</p>
+          <div className="tech my-4 border-b-2 border-white pb-3 text-[#7467eb] font-bold">
             <p>{projects[activeIndex].tech}</p>
           </div>
           <div className="github flex flex-wrap justify-center md:justify-start gap-4">
@@ -115,7 +115,7 @@ function Portfolio() {
               href={projects[activeIndex].liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#261e57] hover:bg-gray-400 transition text-white"
+              className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#9893f2] hover:bg-[#babaf8] transition text-white"
             >
               <MdOutlineArrowOutward size={22} />
               <span className="text-sm md:font-semibold">Live Project</span>
@@ -124,7 +124,7 @@ function Portfolio() {
               href={projects[activeIndex].githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#261e57] hover:bg-gray-400 transition text-white"
+              className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#9893f2] hover:bg-[#babaf8] transition text-white"
             >
               <ImGithub size={22} />
               <span className="text-sm md:font-semibold">GitHub</span>
@@ -133,7 +133,7 @@ function Portfolio() {
               href={projects[activeIndex].linkedinLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#261e57] hover:bg-gray-400 transition text-white"
+              className="flex gap-2 items-center rounded-full px-4 py-2 bg-[#9893f2] hover:bg-[#babaf8] transition text-white"
             >
               <FaLinkedinIn size={22} />
               <span className="text-sm md:font-semibold">Linkedin</span>

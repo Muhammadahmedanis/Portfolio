@@ -13,7 +13,7 @@ function Home() {
     ];
     const waitTime = 2000;
   return (
-    <div id='home' className='flex flex-wrap items-center justify-around bg-[#dcddf8]'>
+    <div id='home' className='flex flex-wrap items-center justify-around bg-[#e7f4ff]'>
         <div>
             <div>
                 <div className="flex justify-center">
@@ -27,16 +27,15 @@ function Home() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className={` lg:text-[39px] text-[28px] pt-[20px] font-bold text-black`}>
+                    className={` lg:text-[39px] text-[28px] pt-[20px] font-bold text-[#432bac]`}>
                     <div>Hey there!</div>
-                    I'm <span className="text-[#a898f9] font-extrabold">Muhammad Ahmed,</span>
+                    I'm <span className="text-[#9893f2] font-extrabold">Muhammad Ahmed</span>
                 </motion.h2>
                 </div>
-                <div className='py-5 font-bold text-2xl text-center md:text-left'>
+                <div className='py-5 font-bold text-2xl text-center md:text-left text-[#432bac]'>
                 <TypeAnimation
                     sequence={roles.flatMap(role => [role, waitTime])}
                     wrapper="span"
-                    // speed={50}
                     repeat={Infinity}
                     />
                 </div>
@@ -46,19 +45,19 @@ function Home() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className={`px-6 py-4 text-[14px] uppercase font-semibold text-white bg-[#261e57]`}
+                    className={`px-6 py-4 text-[14px] uppercase font-semibold text-[#7467eb] bg-[#d7d8fb]`}
                     style={{ letterSpacing: "6px" }}>
                     I create eye-catching websites
                 </motion.h4>
                 </div>
             </div>
             <div className='flex justify-center gap-2 pt-6'>
-                <button className='px-6 py-2 border-none text-xl rounded cursor-pointer bg-[#261e57] hover:bg-[#a09de8] text-white'>
+                <button className='px-6 py-2 border-none text-xl rounded cursor-pointer text-[#7467eb] bg-[#d7d8fb] hover:bg-[#a09de8]'>
                 <a href={resume} target='_blank' rel='noreferrer'>
                     see my resume
                 </a>
                 </button>
-                <button className='px-6 py-2 border-none text-xl rounded cursor-pointer bg-[#261e57] hover:bg-[#a09de8] text-white'>Portfolio</button>
+                <button className='px-6 py-2 border-none text-xl rounded cursor-pointer text-[#7467eb] bg-[#d7d8fb] hover:bg-[#a09de8]'>Portfolio</button>
             </div>
         </div>
 

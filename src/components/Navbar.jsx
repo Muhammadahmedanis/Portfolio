@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { IoMoonSharp } from "react-icons/io5";
-import { MdOutlineWbSunny } from "react-icons/md";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -19,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full bg-[#dcddf8] sticky top-0 z-10">
+    <div className="w-full bg-[#e7f4ff] sticky top-0 z-10">
       <div className="flex justify-between items-center px-5 py-3 dark:bg-gray-900 dark:text-white">
         <div className="flex items-center">
           <img src={logo} alt="logo" className="h-[52px] w-[55px]" />
@@ -40,7 +38,7 @@ const Navbar = () => {
               <a
               href={`#${nav.id}`}
                 key={nav.name}
-                className="px-4 py-2 relative group block text-[#a898f9] text-[17px] cursor-pointer rounded-lg dark:text-gray-200 md:mx-2"
+                className="px-4 py-2 relative group block text-[#432bac] text-[17px] cursor-pointer rounded-lg dark:text-gray-200 md:mx-2"
               >
                 {nav.name}
                 <span className="absolute -bottom-1 left-1/2 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full group-hover:left-0"></span>
@@ -48,18 +46,6 @@ const Navbar = () => {
               </a>
             ))}
           </ul>
-
-          {/* Dark Mode Toggle */}
-          {/* <div className="relative w-14 cursor-pointer ml-5" onClick={handleCheckboxChange}>
-            <div className={`block h-8 w-14 rounded-full transition ${isChecked ? "bg-blue-500" : "bg-[#E5E7EB]"}`}></div>
-            <div
-              className={`absolute top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition transform ${
-                isChecked ? "translate-x-6" : "translate-x-1"
-              }`}
-            >
-              {isChecked ? <IoMoonSharp className="text-blue-500" /> : <MdOutlineWbSunny className="text-yellow-500" />}
-            </div>
-          </div> */}
         </div>
       </div>
 
@@ -75,16 +61,6 @@ const Navbar = () => {
               {nav.name}
             </li>
           ))}
-            {/* <div className="relative w-14 cursor-pointer mt-1" onClick={handleCheckboxChange}>
-            <div className={`block h-8 w-14 rounded-full transition ${isChecked ? "bg-blue-500" : "bg-[#E5E7EB]"}`}></div>
-            <div
-              className={`absolute top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition transform ${
-                isChecked ? "translate-x-6" : "translate-x-1"
-              }`}
-            >
-              {isChecked ? <IoMoonSharp className="text-blue-500" /> : <MdOutlineWbSunny className="text-yellow-500" />}
-            </div>
-          </div> */}
         </ul>
       </div>
     </div>

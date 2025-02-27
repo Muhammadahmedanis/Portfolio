@@ -33,7 +33,7 @@ function App() {
           <Portfolio />
           <Contact />
           <Footer />
-          <a href="#home" className='fixed right-5 bottom-10 bg-white border-none rounded p-2'>
+          <a href="#home" className='fixed right-5 bottom-10 bg-white text-[#9893f2] border-none rounded p-2'>
             <FaHandPointUp size={30}/>
           </a>
         </>

@@ -72,7 +72,7 @@ const services = [
 
 function Service() {
   return (
-    <div id="service" className="bg-[#dcddf8] text-white py-10 px-4 relative overflow-hidden">
+    <div id="service" className="bg-[#e7f4ff] text-white py-10 px-4 relative overflow-hidden">
       {/* Animated Background Bubbles */}
       {/* <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
@@ -100,7 +100,7 @@ function Service() {
           <h2 className="text-3xl md:text-6xl font-bold mb-2 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             Services
           </h2>
-          <p className="text-[#3f3082] max-w-2xl mx-auto text-[14px] font-semibold md:text-lg">
+          <p className="text-[#9893f2] max-w-2xl mx-auto text-[14px] font-semibold md:text-lg">
             Delivering comprehensive web solutions with a focus on quality, performance, and user experience
           </p>
         </div>
@@ -110,7 +110,7 @@ function Service() {
           {services.map((service, index) => (
             <div key={index} className="group relative border-none">
               {/* Card Background with Glassmorphism */}
-              <div className="absolute inset-0 bg-[#b6b6ef] rounded-xl" />
+              <div className="absolute inset-0 bg-[#d7d8fb] rounded-xl" />
 
               {/* Card Content */}
               <div className="relative p-6 h-full backdrop-blur-sm rounded-xl border-none hover:border-gray-600/50 transition-all duration-300 hover:transform hover:-translate-y-1">
@@ -122,15 +122,15 @@ function Service() {
                     {service.icon}
                   </div>
                   {/* Decorative Icon */}
-                  <div className="text-white group-hover:text-gray-400 transition-all duration-300 group-hover:rotate-12">
+                  <div className="text-[#7467eb]  transition-all duration-300 group-hover:rotate-12">
                     {service.decorativeIcon}
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold mb-3 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300">
+                <h3 className="text-xl font-bold mb-3 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-[#7467eb] group-hover:from-white group-hover:to-white transition-all duration-300">
                   {service.title}
                 </h3>
-                <p className="text-[#3f3082] text-sm leading-relaxed group-hover:text-gray-300 transition-all duration-300">
+                <p className="text-[#9893f2] text-[15px] font-semibold leading-relaxed transition-all duration-300">
                   {service.description}
                 </p>
 
